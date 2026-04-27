@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div style={{ padding: "40px" }}>
+    <div id="contact" style={{ padding: "40px" }}>
       <h2>Contact Me</h2>
 
       <p>Email: your@email.com</p>

@@ -10,6 +10,7 @@ function Footer() {
       }}
     >
       <p>© 2026 Arun. All rights reserved.</p>
+      <p>Designed with love ❤️</p>
     </footer>
   );
 }

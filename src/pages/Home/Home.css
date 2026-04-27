@@ -1,0 +1,56 @@
+.home{
+    height: 100vh;
+    background: url("/bg.jpg") no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+/* Dark overlay for readability */
+.home .overlay{
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Content */
+.home-content {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.home-content h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Typing effect */
+.typing {
+  color: #38bdf8;
+  border-right: 2px solid #38bdf8;
+  padding-right: 5px;
+}
+
+@media (max-width: 786px){
+    .home{
+        padding-left: 20px;
+        text-align: left;
+    }
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h2 {
+        font-size: 20px;
+    }
+}

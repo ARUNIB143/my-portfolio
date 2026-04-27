@@ -13,7 +13,7 @@ function Projects() {
   ];
 
   return (
-    <div style={{ padding: "40px" }}>
+    <div id="projects" style={{ padding: "40px" }}>
       <h2>My Projects</h2>
 
       <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
