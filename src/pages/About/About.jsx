@@ -16,7 +16,7 @@ function About() {
           <h3>I'm Arun, a Developer</h3>
 
           <p>
-            I am person with few dream and that few dreams are coming true one by one.
+            I am man of focus, commitment, sheer will, something you know very little about.
             I am curious, Enthusiastic, Amazing, Creative, Hunger to learn kind of person.
             I belive in what I do and what surrounds me.
             Oh yaa I am a huge fan of Uzumaki Naruto.
