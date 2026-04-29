@@ -98,14 +98,12 @@
 /* TEXT */
 .info-card h5 {
   margin: 0;
-  /* color: #fff; */
   color: #222;
   font-size: 18px;
 }
 
 .info-card p {
   margin: 5px 0 0;
-  /* color: rgb(255, 255, 255); */
   color: #555;
   font-size: 18px;
 }
@@ -192,4 +190,21 @@
     .contact-desc{
         font-size: 20px;
     }
+}
+
+@media (max-width: 480px){
+
+  .icon-box {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .info-card h5 {
+    font-size: 16px;
+  }
+
+  .info-card p {
+    font-size: 14px;
+  }
 }
