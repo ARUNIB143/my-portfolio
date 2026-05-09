@@ -1,16 +1,16 @@
 .contact-section{
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: #f9f9f9;
 }
 
 .contact-title{
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
 .contact-desc {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 40px;
     color: #555;

@@ -1,46 +1,70 @@
+import "./Projects.css"
+import { FaCode, FaDatabase, FaRobot, FaChartBar, FaGlobe, FaMobileAlt } from "react-icons/fa"
+
 function Projects() {
-  const projectList = [
-    {
-      title: "Robot Monitoring System",
-      description: "Real-time PLC monitoring dashboard using Blazor.",
-      github: "https://github.com/yourusername/project1",
-    },
-    {
-      title: "Shearing Data Dashboard",
-      description: "Live production tracking system with SignalR integration.",
-      github: "https://github.com/yourusername/project2",
-    },
-  ];
-
   return (
-    <div id="projects" style={{ padding: "40px" }}>
-      <h2>My Projects</h2>
+   <section id="projects" className="projects-section">
+    
+    <h2 className="projects-title">Projects</h2>
 
-      <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
-        {projectList.map((project, index) => (
-          <div
-            key={index}
-            style={{
-              border: "1px solid #ddd",
-              padding: "20px",
-              borderRadius: "8px",
-              width: "250px",
-            }}
-          >
-            <h3>{project.title}</h3>
-            <p style={{ color: "gray" }}>{project.description}</p>
+    <p className="projects-desc">
+      Below are the projects that I have worked/contributed on. Through these project I have learned different part of the technologies used,
+      and I got lot to learn form them.
+    </p>
 
-            <a
-              href={project.github}
-              target="_blank"
-              style={{ color: "blue" }}
-            >
-              View Code
-            </a>
-          </div>
-        ))}
+    <div className="projects-container">
+      
+      <div className="project-card">
+        <div className="icon"><FaRobot /></div>
+         <div className="project-content">
+          <h3>Robot Monitoring System</h3>
+          <p>Built a real-time dashboard using Blazor and PLC integration to monitor robot operations.</p>
+        </div>
       </div>
+
+      <div className="project-card">
+          <div className="icon"><FaDatabase /></div>
+          <div className="project-content">
+            <h3>Data Collector</h3>
+            <p>Developed a console app to collect machine data and store it in SQL Server automatically.</p>
+          </div>
+      </div>
+
+      <div className="project-card">
+        <div className="icon"><FaChartBar /></div>
+        <div className="project-content">
+          <h3>Efficiency Dashboard</h3>
+          <p>Created charts using Chart.js to visualize machine efficiency and production trends.</p>
+        </div>
+      </div>
+
+      <div className="project-card">
+        <div className="icon"><FaCode /></div>
+        <div className="project-content">
+          <h3>Excel Automation Tool</h3>
+          <p>Automated Excel reports with dynamic formulas using ClosedXML and C#.</p>
+        </div>
+      </div>
+
+      <div className="project-card">
+        <div className="icon"><FaGlobe /></div>
+        <div className="project-content">
+          <h3>Portfolio Website</h3>
+          <p>Designed and built a responsive portfolio using React and modern UI styling.</p>
+        </div>
+      </div>
+
+      <div className="project-card">
+        <div className="icon"><FaMobileAlt /></div>
+        <div className="project-content">
+          <h3>Future Mobile App</h3>
+          <p>Currently exploring mobile development with React Native for cross-platform apps.</p>
+        </div>
+      </div>
+
     </div>
+
+   </section>
   );
 }
 
