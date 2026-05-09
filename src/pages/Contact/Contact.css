@@ -207,4 +207,10 @@
   .info-card p {
     font-size: 14px;
   }
+
+  .contact-desc{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }

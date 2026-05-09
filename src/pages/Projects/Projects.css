@@ -105,4 +105,10 @@
   .project-card {
     flex-direction: row;
   }
+  
+    .projects-desc{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }

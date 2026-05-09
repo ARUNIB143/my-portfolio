@@ -34,8 +34,10 @@ function Navbar(){
             </div>
         
             <div className={`sidebar ${menuOpen ? "active" : ""}`}>
-                <div className="close-btn" onClick={() => setMenuOpen(false)}>
-                    ✕
+                <div className="close-container">
+                    <div className="close-btn" onClick={() => setMenuOpen(false)}>
+                        ✕
+                    </div>
                 </div>
 
                 <div className="profile">

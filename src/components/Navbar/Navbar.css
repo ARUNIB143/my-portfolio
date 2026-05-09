@@ -40,6 +40,11 @@
     transition: 0.3s;
 }
 
+.close-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Profile section */
 .profile{
     text-align: center;
