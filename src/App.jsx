@@ -5,7 +5,8 @@ import Resume from "./pages/Resume/Resume";
 import Projects from "./pages/Projects/Projects";
 import "./App.css";
 import Contact from "./pages/Contact/Contact";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer/Footer"
+import ScrollToTOp from "./components/ScrollToTop/ScrollToTop"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Projects />  
     <Contact />
     <Footer />
+    <ScrollToTOp />
   </div>
   );
 }

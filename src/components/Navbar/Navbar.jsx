@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
