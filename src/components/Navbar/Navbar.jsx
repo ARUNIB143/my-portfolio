@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaHome, FaUser, FaFileAlt, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
@@ -6,10 +6,27 @@ import { FaHome, FaUser, FaFileAlt, FaProjectDiagram, FaEnvelope } from "react-i
 
 function Navbar(){
     const[menuOpen, setMenuOpen] = useState(false);
+    const[scrolled, setScrolled] = useState(false);
+
+
+    useEffect(() => {
+        const handleScroll = () =>{
+            if(window.scrollY > 50){
+                setScrolled(true);
+            }else{
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+
+    }, []);
 
     return(
         <>
-            <nav className="navbar">
+            <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
                 <h2 className="logo">Arun</h2>
 
                 <div className={`nav-links ${menuOpen ? "active" : ""}`}>
